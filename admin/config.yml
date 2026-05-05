@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: nobu2002/the-coffee-table
+  name: git-gateway
   branch: main
 
 media_folder: "images"
