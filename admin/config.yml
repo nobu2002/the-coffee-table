@@ -23,3 +23,21 @@ collections:
       - { label: "Description", name: "body", widget: "text" }
       - { label: "Location", name: "location", widget: "string" }
       - { label: "Cost", name: "cost", widget: "string" }
+
+  - name: "homepage"
+    label: "Home Page"
+    files:
+      - name: "hero"
+        label: "Hero Section"
+        file: "_data/hero.md"
+        fields:
+          - { label: "Main Heading", name: "heading", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Stat 1 Number", name: "stat1_number", widget: "string" }
+          - { label: "Stat 1 Label", name: "stat1_label", widget: "string" }
+          - { label: "Stat 2 Number", name: "stat2_number", widget: "string" }
+          - { label: "Stat 2 Label", name: "stat2_label", widget: "string" }
+          - { label: "Stat 3 Number", name: "stat3_number", widget: "string" }
+          - { label: "Stat 3 Label", name: "stat3_label", widget: "string" }
+          - { label: "Stat 4 Number", name: "stat4_number", widget: "string" }
+          - { label: "Stat 4 Label", name: "stat4_label", widget: "string" }
