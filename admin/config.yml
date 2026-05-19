@@ -38,7 +38,7 @@ collections:
         name: "cost"
         widget: "string"
 
-  - name: "homepage"
+  - name: "settings"
     label: "Home Page"
     folder: "_homepage"
     create: true
