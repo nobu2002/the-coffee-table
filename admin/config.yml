@@ -2,6 +2,8 @@ backend:
   name: github
   repo: nobu2002/the-coffee-table
   branch: main
+  base_url: https://cms-oauth.magarsagun38.workers.dev
+  auth_endpoint: /auth
 
 media_folder: images
 
