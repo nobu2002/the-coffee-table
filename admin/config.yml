@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: nobu2002/the-coffee-table
   branch: main
 
 media_folder: images
@@ -41,23 +42,27 @@ collections:
   - name: settings
     label: Home Page
     folder: _homepage
-    create: true
-    fields:
-      - label: Main Heading
-        name: heading
-        widget: string
-      - label: Description
-        name: description
-        widget: text
-      - label: Stat 1 Number
-        name: stat1_number
-        widget: string
-      - label: Stat 1 Label
-        name: stat1_label
-        widget: string
-      - label: Stat 2 Number
-        name: stat2_number
-        widget: string
-      - label: Stat 2 Label
-        name: stat2_label
-        widget: string
+    create: false
+    files:
+      - label: Home Page Settings
+        name: home
+        file: _homepage/home.md
+        fields:
+          - label: Main Heading
+            name: heading
+            widget: string
+          - label: Description
+            name: description
+            widget: text
+          - label: Stat 1 Number
+            name: stat1_number
+            widget: string
+          - label: Stat 1 Label
+            name: stat1_label
+            widget: string
+          - label: Stat 2 Number
+            name: stat2_number
+            widget: string
+          - label: Stat 2 Label
+            name: stat2_label
+            widget: string
