@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+.testimonials-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 260px;
+  text-align: center;
+}
+
+.testimonial-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  color: #111;
+}
+
+.testimonial-center {
+  font-size: 0.85rem;
+  color: #777;
+}
