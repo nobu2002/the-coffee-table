@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Products &amp; Services | The Coffee Table</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="testimonials.css" />
 
 </head>
 <body>
@@ -44,99 +45,12 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="filter-bar" aria-label="Filter community services">
-          <button class="filter-btn active" type="button" data-filter="all">All Services</button>
-          <button class="filter-btn" type="button" data-filter="food">Food Support</button>
-          <button class="filter-btn" type="button" data-filter="meals">Meals</button>
-          <button class="filter-btn" type="button" data-filter="social">Social</button>
-          <button class="filter-btn" type="button" data-filter="skills">Skills</button>
-          <button class="filter-btn" type="button" data-filter="support">Advice</button>
-        </div>
-
-        <div class="program-grid" id="serviceCards">
-        <article class="card service-card" data-category="food">
-          <span class="tag">Food Support</span>
-          <h3>Food Bank Support Pack</h3>
-          <p>Essential groceries and emergency food relief for people and families going through financial pressure.</p>
-          <div class="meta-row">
-            <span>Main Support Hub</span>
-            <span>Free</span>
-          </div>
-          <div class="inline-actions">
-            <a class="btn btn-secondary" href="contact.html">Learn More</a>
-          </div>
-        </article>
-
-        <article class="card service-card" data-category="meals">
-          <span class="tag">Meals</span>
-          <h3>Community Kitchen</h3>
-          <p>Fresh meals served in a friendly space where visitors can enjoy food, conversation, and support.</p>
-          <div class="meta-row">
-            <span>Community Kitchen Centre</span>
-            <span>Low Cost</span>
-          </div>
-          <div class="inline-actions">
-            <a class="btn btn-secondary" href="contact.html">Learn More</a>
-          </div>
-        </article>
-
-        <article class="card service-card" data-category="social">
-          <span class="tag">Social Support</span>
-          <h3>Coffee Table Gathering</h3>
-          <p>Regular social meetups that help reduce isolation and create stronger relationships in the local area.</p>
-          <div class="meta-row">
-            <span>Neighbourhood Space</span>
-            <span>Free</span>
-          </div>
-          <div class="inline-actions">
-            <a class="btn btn-secondary" href="contact.html">Learn More</a>
-          </div>
-        </article>
-
-        <article class="card service-card" data-category="skills">
-          <span class="tag">Skills</span>
-          <h3>Sewing Class</h3>
-          <p>Practical classes designed to build confidence, creativity, and useful everyday sewing skills.</p>
-          <div class="meta-row">
-            <span>Skills Studio</span>
-            <span>Weekly Program</span>
-          </div>
-          <div class="inline-actions">
-            <a class="btn btn-secondary" href="contact.html">Learn More</a>
-          </div>
-        </article>
-
-        <article class="card service-card" data-category="support">
-          <span class="tag">Guidance</span>
-          <h3>Referral and Support Advice</h3>
-          <p>Friendly conversations that help visitors understand which services, forms, or local pathways may suit them.</p>
-          <div class="meta-row">
-            <span>Reception Desk</span>
-            <span>Free</span>
-          </div>
-          <div class="inline-actions">
-            <a class="btn btn-secondary" href="contact.html">Learn More</a>
-          </div>
-        </article>
-
-        <article class="card service-card" data-category="support social">
-          <span class="tag">Family Support</span>
-          <h3>Parent and Carer Connection</h3>
-          <p>Supportive sessions where parents and carers can connect, share experiences, and access local information.</p>
-          <div class="meta-row">
-            <span>Family Support Centre</span>
-            <span>Community Program</span>
-          </div>
-          <div class="inline-actions">
-            <a class="btn btn-secondary" href="contact.html">Learn More</a>
-          </div>
-        </article>
-        </div>
-        <p class="filter-note">Use the buttons above to quickly look through the different types of services.</p>
-      </div>
-    </section>
+    <section class="section alt">
+  <div class="container">
+    <div id="root" data-page="services"></div>
+    <script type="module" src="testimonials.js"></script>
+  </div>
+</section>
 
     <section class="section alt">
       <div class="container">
