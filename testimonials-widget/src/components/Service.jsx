@@ -48,7 +48,7 @@ const icons = {
 function Service({ category, title, description, location, tag }) {
   return (
     <div className="service-card">
-      <div className="service-icon">{icons[category]}</div>
+      <div className="service-icon" aria-hidden="true">{icons[category]}</div>
       <span className="service-category">{category}</span>
       <h3 className="service-title">{title}</h3>
       <p className="service-description">{description}</p>

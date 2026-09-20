@@ -16,13 +16,15 @@ function ServicesList() {
     <div>
       <div className="filter-buttons">
         {categories.map((cat) => (
-          <button
-            key={cat}
-            className={activeCategory === cat ? "filter-btn active" : "filter-btn"}
-            onClick={() => setActiveCategory(cat)}
-          >
-            {cat}
-          </button>
+         <button
+  key={cat}
+  className={activeCategory === cat ? "filter-btn active" : "filter-btn"}
+  onClick={() => setActiveCategory(cat)}
+  aria-pressed={activeCategory === cat}
+  aria-label={`Filter services by ${cat}`}
+>
+  {cat}
+</button> 
         ))}
       </div>
 
