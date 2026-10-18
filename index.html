@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | The Coffee Table</title>
   <link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="testimonials.css" />
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="index.html">
-        <span class="logo-mark">TC</span>
+        <span class="logo-mark">☕</span>
         <span class="logo-text">The Coffee Table<small>Community Services Website</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation menu">
@@ -44,40 +45,19 @@
             <a class="btn btn-primary" href="products.html">Explore Services</a>
             <a class="btn btn-secondary" href="contact.html">Contact Us</a>
           </div>
-          <div class="stats">
-            <article class="stat-card">
-              <h3>5</h3>
-              <p>Community centres</p>
-            </article>
-            <article class="stat-card">
-              <h3>8+</h3>
-              <p>Support programs</p>
-            </article>
-            <article class="stat-card">
-              <h3>50+</h3>
-              <p>Community stories</p>
-            </article>
-            <article class="stat-card">
-              <h3>6</h3>
-              <p>Days of weekly service</p>
-            </article>
-          </div>
+          <div id="root" data-page="stats"></div>
+          <script type="module" src="testimonials.js"></script>
         </div>
 
-        <aside class="hero-card">
-          <h2>Welcome to a caring local space</h2>
-          <p>
-            Our website brings together the most important community information in one place so people can find
-            services, check centre details, read about community experiences, and reach out for help without confusion.
-          </p>
-          <ul class="list-clean">
-            <li>Food relief and emergency support information</li>
-            <li>Community kitchen and shared meal programs</li>
-            <li>Skills classes, workshops, and wellbeing activities</li>
-            <li>Volunteer opportunities and local involvement</li>
-            <li>Simple contact options and easy navigation</li>
-          </ul>
-        </aside>
+        <div class="cup-hero">
+          <div class="cup-disc">
+            <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V9Z"/>
+              <path d="M16 10h1.5a2.5 2.5 0 0 1 0 5H16"/>
+              <path d="M7 3v2M10 3v2M13 3v2" stroke="var(--accent)"/>
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -197,35 +177,4 @@
           <h4>Connect With Us</h4>
           <div class="social-links">
             <a class="social-icon" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7h2.4l.4-3h-2.8V9.1c0-.9.3-1.6 1.7-1.6H16V4.8c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.9V11H7.8v3h2.3v7h3.4Z"/></svg>
-            </a>
-            <a class="social-icon" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2.2A2.8 2.8 0 0 0 4.2 7v10A2.8 2.8 0 0 0 7 19.8h10a2.8 2.8 0 0 0 2.8-2.8V7A2.8 2.8 0 0 0 17 4.2H7Zm10.3 1.6a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2.2A2.8 2.8 0 1 0 12 15a2.8 2.8 0 0 0 0-5.6Z"/></svg>
-            </a>
-            <a class="social-icon" href="https://wa.me/61400000000" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.9A8 8 0 0 0 6.4 6.3a8 8 0 0 0-1.2 8.1L4 20l5.8-1.2A8 8 0 1 0 20 11.9Zm-8 6.6a6.6 6.6 0 0 1-3.4-.9l-.2-.1-3.4.7.7-3.3-.1-.2A6.6 6.6 0 1 1 12 18.5Zm3.7-4.9c-.2-.1-1.3-.7-1.5-.7-.2-.1-.3-.1-.5.1l-.4.5c-.1.1-.2.2-.4.1-.9-.4-1.7-1-2.4-1.7-.6-.6-1.2-1.4-1.6-2.3-.1-.2 0-.3.1-.4l.3-.3.2-.3c.1-.1.1-.3 0-.4 0-.1-.5-1.2-.7-1.6-.2-.4-.3-.3-.5-.3H7c-.2 0-.4.1-.5.3-.5.5-.8 1.1-.7 1.8.1.8.5 1.6 1 2.3.9 1.4 2.1 2.6 3.5 3.5.8.5 1.6.9 2.5 1 .7.1 1.4-.2 1.9-.7.2-.1.3-.4.4-.6l.1-.5c0-.2-.1-.2-.3-.3Z"/></svg>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© <span id="currentYear">2026</span> The Coffee Table</span>
-        <span>Community Services Website</span>
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js" defer></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", user => {
-        if (!user) {
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
-</body>
-</html>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5

@@ -130,6 +130,29 @@
   justify-content: center;
   margin-bottom: 1rem;
 }
+.service-icon svg {
+  width: 28px;
+  height: 28px;
+  animation: wiggle 2.5s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(8deg) scale(1.1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
 
 .service-icon svg {
   width: 28px;
